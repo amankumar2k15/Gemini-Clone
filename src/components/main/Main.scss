@@ -21,7 +21,7 @@
     .main-container {
         max-width: 900px;
         margin: auto;
-        min-height: 90vh;
+        min-height: 80vh;
         display: flex;
         flex-direction: column;
 
@@ -74,7 +74,7 @@
         }
 
         .main-bottom {
-            position: relative;
+            position: absolute;
             bottom: 0;
             width: 100%;
             max-width: 900px;
@@ -184,7 +184,11 @@
     }
 }
 
-
+@media (max-width: 1000px) {
+    .main-bottom {
+        position: relative !important;
+    }
+}
 
 @media(max-width : 600px) {
     .main-bottom input {
