@@ -56,7 +56,7 @@ const GeminiContextProvider = ({ children }) => {
             const nextWord = newResponseArray[i]
             delayPara(i, nextWord + " ")
         }
-        // setResultData(newResponse2)                        // res ko store krwa liya hai "resultData" me
+        // setResultData(newResponse2)            // res ko store krwa liya hai "resultData" me
         setLoading(false)                         // loading bad ho jygi
         setInput("")                              // response aate hi input empty ho jyga
     }
